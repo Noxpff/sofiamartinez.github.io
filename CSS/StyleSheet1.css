@@ -1,0 +1,131 @@
+﻿/*body formatting*/
+body {
+    background-image: url(https://i.ibb.co/k441K6h/sdsdv.png);
+    text-align:left;
+    padding: 20px 100px 20px 100px;
+    font-family: 'Exo 2';
+    font-size: 18px;
+}
+
+/*h1 formatting*/
+h1{
+    font-family: 'Exo 2';
+    font-size: 46px;
+    color: aliceblue;
+}
+
+/*paragraph formatting*/
+p {
+    font-family: 'Exo 2';
+    font-size:20px;
+    color: aliceblue
+}
+
+/*rich paragraph formatting*/
+pre {
+    font-family: 'Exo 2';
+    font-size: 20px;
+    color: aliceblue
+}
+
+/*?*/
+div.gallery img {
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*sets the size of the responsive items*/
+.responsive {
+    padding: 0 6px;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+/*also sets the size, but button is much larger and position is off when deleted*/
+.container {
+    float:left;
+    position: relative;
+    width: 50%;
+}
+
+/*Sets size of the image (didn't seem to affect responsive one)*/
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*button overlay*/
+.overlay {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    height: 40%;
+    width: 40%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    cursor:pointer;
+}
+/*hover effect on overlay button*/
+.container:hover .overlay {
+    opacity: 1;
+}
+/*hover efefct on image*/
+.container:hover .image {
+    filter: brightness(50%);
+    transition: .5s ease;
+}
+/*button text formatting*/
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#ButtonPortfolio {
+    position: center;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+#ButtonPortfolio .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
