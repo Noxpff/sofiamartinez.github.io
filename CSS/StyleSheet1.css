@@ -10,14 +10,15 @@ body {
 /*h1 formatting*/
 h1{
     font-family: 'Exo 2';
-    font-size: 46px;
+    font-size: 60px;
     color: aliceblue;
+    padding: 40px 0px 0px 0px;
 }
 
 /*paragraph formatting*/
 p {
     font-family: 'Exo 2';
-    font-size:20px;
+    font-size:16px;
     color: aliceblue
 }
 
@@ -41,7 +42,6 @@ div.gallery img {
     clear: both;
 }
 
-
 /*sets the size of the responsive items*/
 .responsive {
     padding: 0 6px;
@@ -61,7 +61,7 @@ div.gallery img {
 
 /*also sets the size, but button is much larger and position is off when deleted*/
 .container {
-    float:left;
+    float: left;
     position: relative;
     width: 50%;
 }
@@ -85,7 +85,7 @@ div.gallery img {
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
-    cursor:pointer;
+    cursor: pointer;
 }
 /*hover effect on overlay button*/
 .container:hover .overlay {
@@ -108,6 +108,7 @@ div.gallery img {
 }
 
 #ButtonPortfolio {
+    display: block;
     position: center;
     top: 30%;
     bottom: 30%;
@@ -117,7 +118,7 @@ div.gallery img {
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: black;
 }
 
 #ButtonPortfolio .text {
@@ -128,4 +129,53 @@ div.gallery img {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+
+.ButtonPortfolio {
+    display: block;
+    position: center;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+/*navigation bar*/
+/*nav. bar macro*/
+ul {
+    background-color: #070a14;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+/*makes button be a horizontal line*/
+li {
+    float:left;
+}
+/*makes nav. bar buttons blocks to be arranged*/
+li a {
+    display: block;
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+}
+/*button hover effect*/
+li a:hover {
+    background-color: #141928;
+}
+/*active page button effect*/
+.active {
+    background-color: #15203f;
 }
